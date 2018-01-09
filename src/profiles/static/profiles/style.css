@@ -1,0 +1,25 @@
+body {
+    background: white url("images/background.png");
+}
+#profilePage{
+
+width: 1000px;
+}
+#c1, #c2, #c3 {
+    width: 33%;
+
+    border-collapse: collapse;
+}
+#c2{
+float: left;
+
+}
+#c1,#c3{
+
+height: 190px;
+float: left;
+}
+
+#profileP,#profileP1,#profileP2{
+margin-top:10px;
+}
