@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^account/', include('allauth.urls')),
     url(r'^$', profile_views.dashboard, name='dashboard'),
-    url(r'^home/', profile_views.home, name='home'),
+    url(r'^home/', images_views.home, name='home'),
 
     # Crud on User profile
     url(r'^account/edit/$', profile_views.edit, name='edit'),
