@@ -14,7 +14,7 @@ class Image(models.Model):
     slug = models.SlugField(max_length=200, blank=True)
     image = models.ImageField(upload_to='images/%Y/%m/%d')
     created = models.DateField(auto_now_add=True, db_index=True)
-    # users_like = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='images_liked', blank=True)
+    users_like = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='images_liked', blank=True)
 
     class Meta:
         ordering = ('-created',)
